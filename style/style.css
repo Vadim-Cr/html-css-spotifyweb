@@ -6,12 +6,15 @@
 
 /* GENERALI */
 
-#upper{
+.upper{
     height: calc(100vh - 150px);
     display: flex;
     background-color: deeppink;
 }
 
+.my-container{
+    width: 100%;
+}
 
 /* ?                 Qui parte l'Header                        */
 
@@ -30,19 +33,13 @@ header{
     color: white;
     border-radius: 1.5rem;
     background: transparent;
-    padding: 0.5rem;
+    padding: 0.7rem 1rem;
     border: solid 1px white;    
 }
 
-/* ? --------------------------------------------------------- */
-
-
-/* ?                Qui parte da qui il Footer                 */
-footer{
-    height: 150px;
-    background-color: cadetblue;
+.row{
+    margin: 2rem 0;
 }
-
 
 /* ? --------------------------------------------------------- */
 
@@ -54,8 +51,25 @@ nav{
 
 main{
     flex-grow: 1;
-    height: 100%;
+    height: calc(100% - 5rem);
     background-color: blue;
     width: 100%;
-    margin-top: 0rem;
+    overflow: hidden;
+}
+
+/* ?                Qui parte da qui il Footer                 */
+footer{
+    height: 150px;
+    background-color: cadetblue;
+}
+
+
+/* ? --------------------------------------------------------- */
+
+/* ! DEBUG */
+
+[class*="col"]{
+background-color: aquamarine;
+height: 50px;
+border: SOLID 1PX red;
 }
