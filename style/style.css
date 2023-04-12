@@ -16,6 +16,10 @@ body{
     width: 100%;
 }
 
+[class*="col"]{
+    padding: 0.5rem;
+}
+
 .gray-font{
     color: gray;
 }
@@ -30,12 +34,19 @@ img{
 
 h2{
     color: white;
+    margin-bottom: 1rem;
 }
 
 h4{
     color: white;
     margin-bottom: 0.5rem;
 }
+
+.white{
+    color: white;
+    font-weight: bold;
+}
+
 /* ?                 Qui inizia l'Header                       */
 
 header{
@@ -44,7 +55,7 @@ header{
     justify-content: flex-end;
     height: 5rem;
     width: 100%;
-    background-color: darksalmon;
+    background-color: #080b12;
     padding: 0.5rem;
 }
 
@@ -58,7 +69,7 @@ header{
 }
 
 .row{
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 /* ? --------------------------------------------------------- */
@@ -69,7 +80,38 @@ header{
 nav{
     height: 100%;
     width: 250px;
-    background-color: burlywood;
+    padding: 1rem;
+    background-color: #000000 ;
+
+}
+
+#nav-container{
+    height: calc(100% - 75px);
+    overflow: auto;
+}
+
+#logo{
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+#nav-container > ul > li{
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+}
+.add{
+    font-size: 2rem;
+}
+
+#nav-footer{
+    height: 75px;
+    width: 100%;
+}
+
+#nav-footer > .gray-font{
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid gray;
+    padding-bottom: 0.6rem;
 }
 
 /* ? --------------------------------------------------------- */
@@ -83,6 +125,7 @@ main{
     background-color: #151922;
     width: 100%;
     overflow: auto;
+    padding: 0 1.5rem;
 }
 
 #sub-h{
@@ -98,15 +141,19 @@ ul{
     list-style-type: none;
 }
 
-.centered>.gray-font{
+.centered > .gray-font{
     font-size: 0.7rem;
+}
+
+.circle{
+    border-radius: 50%;
 }
 
 /* ? --------------------------------------------------------- */
 
 /* ?                Qui inizia il Footer                 */
 footer{
-    height: 150px;
+    height: 100px;
     background-color: cadetblue;
 }
 
@@ -116,12 +163,11 @@ footer{
 /* ! DEBUG */
 
 [class*="col"]{
-background-color: aquamarine;
+/* background-color: aquamarine;
 min-height: 50px;
-border: SOLID 1PX red;
-padding: 0.5rem;
+border: SOLID 1PX red; */
 }
 
 .upper{
-    background-color: deeppink;
+    background-color: rgba(255, 20, 145, 0);
 }
