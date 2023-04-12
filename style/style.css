@@ -154,7 +154,10 @@ ul{
 /* ?                Qui inizia il Footer                 */
 footer{
     height: 100px;
+    min-width: 100%;
     background-color: cadetblue;
+
+    justify-content: space-between;
 }
 
 
