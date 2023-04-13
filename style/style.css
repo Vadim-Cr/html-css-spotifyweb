@@ -46,7 +46,11 @@ h4{
     color: white;
     font-weight: bold;
 }
-
+/*                           UPER                              */
+.upper{
+    background-color: rgba(255, 20, 145, 0);
+}
+/* ----------------------------------------------------------- */
 /* ?                 Qui inizia l'Header                       */
 
 header{
@@ -94,6 +98,11 @@ nav{
     width: 70%;
     margin-bottom: 1rem;
 }
+#mini-logo{
+    display: none;
+    width: 1rem;
+    margin-bottom: 1rem
+}
 .fa-folder-plus{
     margin:0 0.4rem 1rem 0;
 }
@@ -140,6 +149,12 @@ main{
     font-weight: bold;
 }
 
+.main-nav{
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+
 ul{
     list-style-type: none;
 }
@@ -151,6 +166,8 @@ ul{
 .circle{
     border-radius: 50%;
 }
+
+
 
 /* ? --------------------------------------------------------- */
 
@@ -173,7 +190,7 @@ span > img{
 
 span{
     margin: 0 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .left-footer{
@@ -185,16 +202,15 @@ span{
     font-weight: bold;
 }
 
-
 /* * ---------------------- Center Footer------------------------------ */
 .center-footer{
-padding: 0.5rem 0;
+    padding: 0.5rem 0;
 }
 
 .media-player{
     display: flex;
     justify-content: space-between;
-    font-size: 2rem;
+    font-size: 1.1rem;
     width: 15rem;
     color: white;
     margin: auto;
@@ -202,20 +218,20 @@ padding: 0.5rem 0;
 
 .loader{
     height: 0.5rem;
-    width: 35rem;
-    background-color: white;
+    width: 20rem;
+    background-color: gray;
     border-radius: 1rem;
     margin: 1rem 0;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
 
 .progress-bar{
-    width: 99%;
+    width: 25%;
     height: 80%;
-    background-color: gray;
+    background-color: rgb(229, 229, 229);
     border-radius: 1rem;
 }
 
@@ -237,6 +253,8 @@ padding: 0.5rem 0;
     border: solid 1px white;
 }
 
+
+
 /* * ------------------------Right Footer------------------------ */
 
 .right-footer{
@@ -248,16 +266,64 @@ padding: 0.5rem 0;
 .loader-small{
     height: 0.5rem;
     width: 10rem;
-    background-color: white;
+    background-color: gray;
     border-radius: 1rem;
     margin: 1rem 0;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
+
 /* ? --------------------------------------------------------- */
 
+/* ----------------media query tablet nel main----------------- */
+
+
+@media only screen and (max-width: 930px) {
+    .loader-small{
+        width: 7rem;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .loader{
+        width: 15rem;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .small-sinister{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .media-player{
+        font-size: 0.7rem;
+        width: 10rem;
+    }
+    .loader{
+        height: 0.5rem;
+        width: 10rem;
+    }
+    .loader-small{
+        height: 0.5rem;
+        width: 5rem;
+    }
+}
+
+@media only screen and (max-width: 552px) {
+    .part-two{
+        display: none;
+    }
+    nav{
+        width: 50px;
+    }
+    #mini-logo{
+        display: block;
+    }
+}
 /* ! DEBUG */
 
 [class*="col"]{
@@ -266,6 +332,3 @@ min-height: 50px;
 border: SOLID 1PX red; */
 }
 
-.upper{
-    background-color: rgba(255, 20, 145, 0);
-}
